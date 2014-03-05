@@ -21,4 +21,4 @@ To run the sample programs:
 
 ## License
 
-License?
+License? Do what you want. Let me know. Give credit to the guy who reverse-engineered the protocol. MIT? Sure. Yeah, that sounds like a thing people do. MIT.
