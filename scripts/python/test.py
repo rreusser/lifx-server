@@ -7,6 +7,9 @@ import math
 lifx = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 lifx.connect(('localhost', 8080))
 
+def send(command):
+  lifx.send(json.dumps(command)+'\n')
+
 def fadefunc(t):
   return math.exp((math.floor(t)-t)*1)
   
@@ -29,7 +32,7 @@ while True:
   f = 0 if b-pb > 0 else 200
   pb = b
 
-  lifx.send(json.dumps({
+  send({
     'operation': 'color',
     'value': {
       'hue': h,
@@ -37,6 +40,6 @@ while True:
       'saturation': 1.0,
       'fadeTime': f
     }
-  })+'\n')
+  })
   
   time.sleep( update_pd - t%update_pd )
