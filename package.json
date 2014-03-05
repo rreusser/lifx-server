@@ -1,0 +1,26 @@
+{
+  "name": "lifx-server",
+  "version": "0.0.1",
+  "author": "Ricky Reusser <rsreusser@gmail.com",
+  "description": "A simple server for lifx",
+  "main": "./lifx-server.js",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/rreusser/lifx-server.git"
+  },
+  "licenses" : [
+    {
+      "type" : "MIT"
+    }
+  ],
+  "keywords": [
+    "lifx",
+    "led",
+    "wifi",
+    "bulb",
+    "lightbulb"
+  ],
+  "dependencies" : {
+    "lifx" : "*"
+  }
+}
