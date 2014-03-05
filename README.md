@@ -5,7 +5,7 @@ This is a very minimal server built on the NodeJS client at https://www.npmjs.or
 Demo (source code in scripts/python/audio.py): http://instagram.com/p/lJf0z7GZ1w/
 ## Install
 
-The server is just a thin shell around the (outstanding!) LIFX node package at https://www.npmjs.org/package/lifx, so you obviously need to have that installed:
+The server is just a thin shell around the (outstanding!) LIFX nodejs package at https://www.npmjs.org/package/lifx, so you obviously need to have that installed:
 
   $ npm install lifx
 
